@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main class="container">
+  <h1>Topics</h1>
+
+  {{/* Iterate tags (topics) */}}
+  {{ range $topic, $taxonomy := .Site.Taxonomies.tags }}
+    <section style="margin: 2rem 0;">
+      <h2 style="margin-bottom: 0.5rem;">
+        <a href="{{ (printf "/tags/%s/" ($topic | urlize)) | relLangURL }}">{{ $topic }}</a>
+      </h2>
+
+      <ul>
+        {{ range $taxonomy.Pages.ByDate.Reverse }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span style="opacity:.7; font-size:.9em;"> — {{ .Date.Format "2006-01-02" }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+</main>
+{{ end }}
