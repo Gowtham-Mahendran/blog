@@ -1,0 +1,7 @@
+body {
+  background-color: #ede7e7; /* paper base color */
+  background-image: url("/image/nnnoise.svg");
+  background-repeat: repeat;
+}
+
+.meta { display: none !important; }

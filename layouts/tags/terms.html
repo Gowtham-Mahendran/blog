@@ -13,7 +13,7 @@
         {{ range $taxonomy.Pages.ByDate.Reverse }}
           <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span style="opacity:.7; font-size:.9em;"> — {{ .Date.Format "2006-01-02" }}</span>
+            <!-- <span style="opacity:.7; font-size:.9em;"> — {{ .Date.Format "2006-01-02" }}</span> -->
           </li>
         {{ end }}
       </ul>

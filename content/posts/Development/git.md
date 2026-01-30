@@ -1,0 +1,58 @@
+---
+title: "Git essentials"
+description: "Concise notes on Git user configuration and GitHub authentication"
+date: 2025-12-01
+tags: ["development"]
+draft: false
+---
+
+## Configuration
+
+| Purpose | Command |
+|-------|--------|
+| Show all config | `git config --list` |
+| Show user name | `git config --get user.name` |
+| Show user email | `git config --get user.email` |
+| Set global name | `git config --global user.name "Your Name"` |
+| Set global email | `git config --global user.email "you@example.com"` |
+| Set local name | `git config user.name "Your Name"` |
+| Unset global email | `git config --global --unset user.email` |
+| Check working tree status | `git status` |
+
+
+## Remotes & Authentication
+
+GitHub no longer allows password-based authentication. Use a Personal Access Token (PAT).
+
+`Profile > Settings > Developer settings > PAT > Fine-grained tokens`
+
+**Required permissions:** Read access to metadata, Read and Write access to code
+
+| Purpose | Command |
+|-------|--------|
+| List remotes | `git remote -v` |
+| Update remote (HTTPS + PAT) | `git remote set-url origin https://<user>:<PAT>@github.com/<user>/<repo>.git` |
+| Switch to SSH | `git remote set-url origin git@github.com:<user>/<repo>.git` |
+
+## Branches
+
+| Purpose | Command |
+|-------|--------|
+| List local branches | `git branch` |
+| List remote branches | `git branch -r` |
+| Push branch to origin | `git push origin <branch>` |
+| Pull branch from origin | `git pull origin <branch>` |
+
+## Commits
+
+| Purpose | Command |
+|-------|--------|
+| Commit with message | `git commit -m "message"` |
+| Commit and close issue | `git commit -m "message (closes #issue)"` |
+| Verify commit author | `git log --pretty=full` |
+
+## Cleanup
+
+| Purpose | Command |
+|-------|--------|
+| Prune deleted remote branches | `git fetch -p` |

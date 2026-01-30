@@ -1,13 +1,36 @@
 ---
-title: "LaTeX Quick Notes"
-date: 2025-12-27
-description: "A minimal, practical guide to writing clean LaTeX documents"
-categories: [Linux]
-tags: [latex, productivity]
-draft: False
+title: "LaTeX"
+description: "Minimal notes for installing and using LaTeX with VS Code"
+tags: ["productivity"]
+draft: false
 ---
 
-Here you can find a minimal starting guide to work on latex. Some simple syntax for margins, basic text variations, headings, equations, images and tables are included. <!-- more -->
+## Installation
+
+```bash
+sudo aptitude install texlive-full
+```
+
+**Verify installation**
+
+```bash
+tex --version
+```
+
+```bash
+pdflatex --version
+```
+
+`pdflatex` is the compiler used by VS Code for LaTeX builds.
+
+## VS Codium
+
+Install the **LaTeX Workshop** extension by **James-Yu**. See [**Visual studio code**]({{< relref "posts/development/vs-codium.md" >}}) setup.
+
+
+---
+
+Here you can find a minimal starting guide to work on latex. Some simple syntax for margins, basic text variations, headings, equations, images and tables are included.
 
 Before starting, enable word wrapping in **VSCodium**:
 
@@ -15,9 +38,8 @@ Before starting, enable word wrapping in **VSCodium**:
 
 This makes LaTeX source files far easier to read and maintain.
 
----
 
-## 1. Start with a main file
+**Start with a main file**
 
 Always create a central entry point:
 
@@ -29,7 +51,7 @@ This file defines the document layout and imports all other content.
 
 ---
 
-## 2. Define the document class
+**Define the document class**
 
 Every LaTeX document starts with a class:
 
@@ -46,7 +68,7 @@ Every LaTeX document starts with a class:
 
 ---
 
-## 3. Document boundaries
+**Document boundaries**
 
 All content must live inside:
 
@@ -58,7 +80,7 @@ All content must live inside:
 
 ---
 
-## 4. Set page margins
+**Set page margins**
 
 Use the `geometry` package for predictable layouts:
 
@@ -69,7 +91,7 @@ Use the `geometry` package for predictable layouts:
 
 ---
 
-## 5. Sections and hierarchy
+**Sections and hierarchy**
 
 ```tex
 \section{Title}
@@ -79,7 +101,7 @@ Use the `geometry` package for predictable layouts:
 
 ---
 
-## 6. Text formatting
+**Text formatting**
 
 ```tex
 \textbf{bold}
@@ -88,7 +110,7 @@ Use the `geometry` package for predictable layouts:
 
 ---
 
-## 7. Code listings
+**Code listings**
 
 ```tex
 \usepackage{listings}
@@ -100,7 +122,7 @@ print("Hello, LaTeX")
 
 ---
 
-## 8. Figures and images
+**Figures and images**
 
 ```tex
 \usepackage{float}
@@ -118,7 +140,7 @@ print("Hello, LaTeX")
 
 ---
 
-## 9. Splitting content into files
+**Splitting content into files**
 
 ```tex
 \usepackage[utf8]{inputenc}
@@ -134,9 +156,9 @@ When using secondary files like `intro.tex`, follow these rules:
 
 ---
 
-## 10. Lists
+**Lists**
 
-### Bullet points
+Bullet points
 
 ```tex
 \begin{itemize}
@@ -146,7 +168,7 @@ When using secondary files like `intro.tex`, follow these rules:
 \end{itemize}
 ```
 
-### Numbered lists
+numbered lists
 
 ```tex
 \begin{enumerate}
@@ -157,7 +179,7 @@ When using secondary files like `intro.tex`, follow these rules:
 
 ---
 
-## 11. Superscripts and subscripts
+**Superscripts and subscripts**
 
 ```tex
 text$^{sup}$
@@ -166,7 +188,7 @@ text$_{sub}$
 
 ---
 
-## 12. Equations
+**Equations**
 
 ```tex
 \begin{equation}
@@ -180,7 +202,7 @@ X_L = 2\pi f L
 
 ---
 
-## 13. Tables
+**Tables**
 
 ```tex
 \begin{table}[H]
@@ -204,8 +226,7 @@ a & b & c \\
 
 ---
 
-
-## 14. Spacing
+**Spacing**
 
 To insert some space between the heading and paragraph,
 ```tex
@@ -218,4 +239,4 @@ some paragraph text goes here....
 
 ---
 
-<!-- This setup is intentionally simple. It keeps LaTeX predictable, readable, and maintainable—even as documents grow large. -->
+This setup is intentionally simple. It keeps LaTeX predictable, readable, and maintainable—even as documents grow large.

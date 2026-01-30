@@ -16,3 +16,7 @@ theme = "archie"
 
 [taxonomies]
   tag = "tags"
+
+[params]
+  customCSS = ["css/custom.css"]
+  showdate = false
