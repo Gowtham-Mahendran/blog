@@ -27,6 +27,8 @@ Documentation: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
 | Sync dependencies       | `uv sync`             |
 | Sync with extras        | `uv sync --extra dev` |
 | List installed packages | `uv pip list`         |
+| List outdated packages  | `uv pip list --outdated` |
+| Upgrade installed packages | `uv pip install --upgrade <name>` |
 
 ## Python versions
 
@@ -51,4 +53,5 @@ Documentation: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
 | Run tests            | `uv run pytest`    |
 | Quiet mode           | `uv run pytest -q` |
 | Show stdout / prints | `uv run pytest -s` |
+| show detailed test output | ùv run pytest -v` |
 
