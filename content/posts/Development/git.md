@@ -47,8 +47,11 @@ GitHub no longer allows password-based authentication. Use a Personal Access Tok
 
 | Purpose | Command |
 |-------|--------|
+| Add files | `git add <filename>` |
+| Add multiple files  | `git add .` |
 | Commit with message | `git commit -m "message"` |
-| Commit and close issue | `git commit -m "message (closes #issue)"` |
+| Commit and close issue [Keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)| `git commit -m "message (closes #issue)"` |
+| Commit & close multiple issues | `git commit -m "message (closes #issue, closes #issue)"` |
 | Verify commit author | `git log --pretty=full` |
 
 ## Cleanup
