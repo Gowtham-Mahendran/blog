@@ -30,6 +30,7 @@ GitHub no longer allows password-based authentication. Use a Personal Access Tok
 
 | Purpose | Command |
 |-------|--------|
+| Clone a project | `git clone <project-url>` |
 | List remotes | `git remote -v` |
 | Update remote (HTTPS + PAT) | `git remote set-url origin https://<user>:<PAT>@github.com/<user>/<repo>.git` |
 | Switch to SSH | `git remote set-url origin git@github.com:<user>/<repo>.git` |
@@ -59,3 +60,7 @@ GitHub no longer allows password-based authentication. Use a Personal Access Tok
 | Purpose | Command |
 |-------|--------|
 | Prune deleted remote branches | `git fetch -p` |
+| Delete local branch | `git branch -D <branch>` |
+| Delete multiple branches | `git branch -D <b1> <b2> <b3>` |
+
+<!-- Merge and rebase needs to be added -->
