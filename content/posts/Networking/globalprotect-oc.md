@@ -2,6 +2,7 @@
 title: "GlobalProtect VPN"
 description: "Minimal notes for installing and using GlobalProtect via openconnect"
 tags: ["networking"]
+date: 2025-04-16
 draft: false
 ---
 

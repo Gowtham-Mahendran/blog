@@ -2,6 +2,7 @@
 title: "PDF tools"
 description: "Minimal notes for common PDF operations on Linux"
 tags: ["system utilities"]
+date: 2025-07-30
 draft: false
 ---
 

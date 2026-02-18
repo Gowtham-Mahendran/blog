@@ -2,6 +2,7 @@
 title: "Mounting network drives (CIFS)"
 description: "Notes for mounting CIFS/SMB network shares permanently on Linux"
 tags: ["networking"]
+date: 2025-09-10
 draft: false
 ---
 

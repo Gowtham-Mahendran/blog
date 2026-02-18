@@ -1,11 +1,11 @@
 baseURL = 'https://gowt.dev/'
 languageCode = 'en-us'
-title = "Blog"
+title = "Home"
 theme = "archie"
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Blog"
     url = "/"
     weight = 1
 

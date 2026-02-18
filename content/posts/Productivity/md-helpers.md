@@ -2,6 +2,7 @@
 title: "Markdown helpers"
 description: "Quick references for emojis and admonitions"
 tags: ["productivity"]
+date: 2025-08-20
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: "Miniforge"
 description: "Notes for installing and configuring Miniforge (conda-forge)"
 tags: ["development"]
+date: 2025-10-01
 draft: false
 ---
 

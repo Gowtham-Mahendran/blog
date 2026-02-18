@@ -2,6 +2,7 @@
 title: "Thunderbird"
 description: "Minimal notes for installing Thunderbird and setting up Exchange + signature"
 tags: ["productivity"]
+date: 2025-03-26
 draft: false
 ---
 

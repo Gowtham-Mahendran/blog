@@ -2,6 +2,7 @@
 title: "Oh My Zsh essentials"
 description: "Notes on installing Oh My Zsh, themes, and useful plugins"
 tags: ["productivity"]
+date: 2026-02-17
 draft: false
 ---
 

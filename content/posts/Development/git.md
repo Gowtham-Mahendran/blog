@@ -55,6 +55,18 @@ GitHub no longer allows password-based authentication. Use a Personal Access Tok
 | Commit & close multiple issues | `git commit -m "message (closes #issue, closes #issue)"` |
 | Verify commit author | `git log --pretty=full` |
 
+### Commitizen
+
+For a standardized way to commit messages, use [commitizen](https://commitizen-tools.github.io/commitizen/).
+
+| Purpose | Command |
+|-------|--------|
+| Initialize commitizen | `cz init` |
+| Commit | `cz commit` |
+| Release a version | `cz bump` |
+| Pre-release a version | `cz bump --prerelease rc` |
+| Push branch with tags | `git push origin <branch> --follow-tags` |
+
 ## Cleanup
 
 | Purpose | Command |

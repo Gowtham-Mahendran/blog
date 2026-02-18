@@ -2,6 +2,7 @@
 title: "External monitor setup (xrandr)"
 description: "Notes for configuring external displays using xrandr"
 tags: ["system utilities"]
+date: 2025-12-16
 draft: false
 ---
 

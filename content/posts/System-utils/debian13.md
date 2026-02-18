@@ -2,6 +2,7 @@
 title: "Debian 13"
 description: "Replacing Windows with Debian 13: BIOS setup, repositories, and base tooling"
 tags: ["system utilities"]
+date: 2025-03-05
 draft: false
 ---
 

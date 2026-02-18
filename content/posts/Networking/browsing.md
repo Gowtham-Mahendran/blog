@@ -2,6 +2,7 @@
 title: "Privacy browsers essentials"
 description: "Notes for installing Brave Browser and Tor on Linux"
 tags: ["networking"]
+date: 2025-12-24
 draft: false
 ---
 

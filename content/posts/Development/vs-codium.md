@@ -2,6 +2,7 @@
 title: "VSCodium"
 description: "Minimal notes for installing and using VSCodium on Linux"
 tags: ["development"]
+date: 2025-05-28
 draft: false
 ---
 

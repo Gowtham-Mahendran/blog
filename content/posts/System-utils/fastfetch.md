@@ -2,6 +2,7 @@
 title: "Fastfetch"
 description: "Notes on using Fastfetch for system information and terminal startup"
 tags: ["system utilities"]
+date: 2025-07-09
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: "Sphinx"
 description: "Minimal notes for installing and bootstrapping Sphinx documentation"
 tags: ["development"]
+date: 2025-05-07
 draft: false
 ---
 

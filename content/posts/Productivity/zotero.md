@@ -2,6 +2,7 @@
 title: "Zotero - Citation management"
 description: "Notes on installing, syncing, and extending Zotero"
 tags: ["productivity"]
+date: 2025-06-18
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: "Networking utilities essentials"
 description: "Notes for using Proxychains and checking IP information on Linux"
 tags: ["networking"]
+date: 2025-11-12
 draft: false
 ---
 

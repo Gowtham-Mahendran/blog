@@ -2,6 +2,7 @@
 title: "LaTeX"
 description: "Minimal notes for installing and using LaTeX with VS Code"
 tags: ["productivity"]
+date: 2026-01-06
 draft: false
 ---
 
@@ -58,13 +59,16 @@ Every LaTeX document starts with a class:
 ```tex
 \documentclass{article}
 ```
-!!! info "LaTeX document classes"
-    **article** → Articles in scientific journals, short reports, and other short documents<br>
-    **proc** → Proceedings class based on the `article` class<br>
-    **report** → Longer reports with chapters, small books, PhD theses<br>
-    **book** → Full-length books<br>
-    **beamer** → Presentations and slides<br>
-    **letter** → Letters and formal correspondence<br>
+
+> **LaTeX document classes**
+>
+> **article** → Articles in scientific journals  
+> **proc** → Proceedings class  
+> **report** → Reports, theses  
+> **book** → Books  
+> **beamer** → Slides  
+> **letter** → Letters  
+
 
 ---
 
@@ -239,4 +243,6 @@ some paragraph text goes here....
 
 ---
 
-This setup is intentionally simple. It keeps LaTeX predictable, readable, and maintainable—even as documents grow large.
+**Matplotlib figures**
+
+[Refer](https://blog.timodenk.com/exporting-matplotlib-plots-to-latex/)

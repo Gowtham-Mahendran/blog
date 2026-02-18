@@ -2,6 +2,7 @@
 title: "UV Astral"
 description: "Concise notes on uv for Python environment and project management"
 tags: ["development"]
+date: 2025-10-22
 draft: false
 ---
 
