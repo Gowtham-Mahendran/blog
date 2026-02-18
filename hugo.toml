@@ -2,6 +2,7 @@ baseURL = 'https://gowt.dev/'
 languageCode = 'en-us'
 title = "Home"
 theme = "archie"
+paginate = 4
 
 [menu]
   [[menu.main]]

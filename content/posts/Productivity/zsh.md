@@ -1,5 +1,5 @@
 ---
-title: "Oh My Zsh essentials"
+title: "Oh My Zsh"
 description: "Notes on installing Oh My Zsh, themes, and useful plugins"
 tags: ["productivity"]
 date: 2026-02-17

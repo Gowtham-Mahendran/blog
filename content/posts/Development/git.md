@@ -1,7 +1,7 @@
 ---
-title: "Git essentials"
+title: "Git"
 description: "Concise notes on Git user configuration and GitHub authentication"
-date: 2025-12-01
+date: 2025-12-03
 tags: ["development"]
 draft: false
 ---

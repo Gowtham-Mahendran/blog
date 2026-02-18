@@ -5,3 +5,15 @@ body {
 }
 
 .meta { display: none !important; }
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .topics-grid {
+    grid-template-columns: 1fr; /* mobile fallback */
+  }
+}
