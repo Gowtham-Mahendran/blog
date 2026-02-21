@@ -2,6 +2,7 @@
 title: "Git"
 description: "Concise notes on Git user configuration and GitHub authentication"
 date: 2025-12-03
+lastmod: 2026-02-21
 tags: ["development"]
 draft: false
 ---
@@ -35,6 +36,20 @@ GitHub no longer allows password-based authentication. Use a Personal Access Tok
 | Update remote (HTTPS + PAT) | `git remote set-url origin https://<user>:<PAT>@github.com/<user>/<repo>.git` |
 | Switch to SSH | `git remote set-url origin git@github.com:<user>/<repo>.git` |
 
+### GPG keys
+
+| Purpose | Command |
+|-------|--------|
+| Install GNUPG | `sudo apt install gnupg`   |
+| Generate key (RSA and RSA)| `gpg --full-generate-key` |
+| View the keys | `gpg --list-secret-keys --keyid-format=long` |
+| Export the Public Key | `gpg --armor --export <gpg-key-id>` |
+| Set key to repo | `git config user.signingkey <gpg-key-id>` |
+| Sign commits | `git config commit.gpgsign true` |
+| Sign tags | `git config tag.gpgsign true` |
+
+After viewing the keys, `sec rsa4096/xxxxxxxxxxxxxxxx` the **x part** is the **gpg-key-id**. The long exported public key is pasted in **Github → Settings → SSH and GPG Keys**. Once done, go to `git config list` and verify.
+
 ## Branches
 
 | Purpose | Command |
@@ -57,15 +72,19 @@ GitHub no longer allows password-based authentication. Use a Personal Access Tok
 
 ### Commitizen
 
-For a standardized way to commit messages, use [commitizen](https://commitizen-tools.github.io/commitizen/).
+For a standardized way to commit messages and bump versions, use [commitizen](https://commitizen-tools.github.io/commitizen/).
 
 | Purpose | Command |
 |-------|--------|
 | Initialize commitizen | `cz init` |
 | Commit | `cz commit` |
-| Release a version | `cz bump` |
+| Release a version (auto decides based on commits)| `cz bump` |
+| Release a patch   | `cz bump --increment patch` |
+| Release a minor   | `cz bump --increment minor` |
 | Pre-release a version | `cz bump --prerelease rc` |
-| Push branch with tags | `git push origin <branch> --follow-tags` |
+| Push branch + annotated tags on pushed commits | `git push origin <branch> --follow-tags` |
+| Push branch + all local tags | `git push origin <branch> --tags` |
+| Push branch + specific tag(s) | `git push origin <branch> v0.0.0` |
 
 ## Cleanup
 

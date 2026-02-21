@@ -243,6 +243,23 @@ some paragraph text goes here....
 
 ---
 
+**Degree**
+
+```tex
+$0^{\circ}$
+```
+
+---
+
+
 **Matplotlib figures**
 
 [Refer](https://blog.timodenk.com/exporting-matplotlib-plots-to-latex/)
+
+---
+
+**Note box**
+
+
+
+---
