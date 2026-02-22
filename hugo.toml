@@ -5,15 +5,6 @@ theme = "archie"
 paginate = 4
 
 [menu]
-  [[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    name = "Topics"
-    url = "/tags/"
-    weight = 2
 
 [taxonomies]
   tag = "tags"

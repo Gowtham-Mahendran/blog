@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="container">
+  <h1>Topics</h1>
+
+  <div class="topics-grid">
+
+  {{ range $topic, $taxonomy := .Site.Taxonomies.tags }}
+    <section class="topic-item">
+      <h2>
+        <a href="{{ (printf "/tags/%s/" ($topic | urlize)) | relLangURL }}">
+          {{ $topic }}
+        </a>
+      </h2>
+
+      <ul>
+        {{ range $taxonomy.Pages.ByDate.Reverse }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  </div>
+</main>
+{{ end }}
