@@ -2,7 +2,7 @@
 title: "Git"
 description: "Concise notes on Git user configuration and GitHub authentication"
 date: 2025-12-03
-lastmod: 2026-02-21
+lastmod: 2026-02-22
 tags: ["development"]
 draft: false
 ---
@@ -93,5 +93,15 @@ For a standardized way to commit messages and bump versions, use [commitizen](ht
 | Prune deleted remote branches | `git fetch -p` |
 | Delete local branch | `git branch -D <branch>` |
 | Delete multiple branches | `git branch -D <b1> <b2> <b3>` |
+
+## Transfer
+
+Transfer an existing project from Gitlab to Github. Clone the existing repo locally. Create a new clean Github repo. On the Gitlab project,
+
+| Purpose | Command |
+|-------|--------|
+| Add Github url | `git remote add <url>` |
+| Push to Github | `git push github --all` |
+
 
 <!-- Merge and rebase needs to be added -->
