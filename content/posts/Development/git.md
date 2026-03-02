@@ -2,7 +2,7 @@
 title: "Git"
 description: "Concise notes on Git user configuration and GitHub authentication"
 date: 2025-12-03
-lastmod: 2026-02-22
+lastmod: 2026-03-02
 tags: ["development"]
 draft: false
 ---
@@ -19,6 +19,8 @@ draft: false
 | Set local name | `git config user.name "Your Name"` |
 | Unset global email | `git config --global --unset user.email` |
 | Check working tree status | `git status` |
+| Disable core editor prompts | `git config core.editor true` |
+| Set a core editor     | `git config core.editor "nano"`   |
 
 
 ## Remotes & Authentication
@@ -102,6 +104,15 @@ Transfer an existing project from Gitlab to Github. Clone the existing repo loca
 |-------|--------|
 | Add Github url | `git remote add <url>` |
 | Push to Github | `git push github --all` |
+
+## Tags and Logs
+
+| Purpose | Command |
+|-------|--------|
+| Manual tag    | `git tag -a v0.5.0 -m "Release v0.5.0"`   |
+| List all tags | `git tag --list`  |
+| Show tags with commits    | `git show-ref --tags`    |
+| Last log | `git log -1 --oneline` |
 
 
 <!-- Merge and rebase needs to be added -->
